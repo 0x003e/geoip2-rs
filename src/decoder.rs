@@ -162,7 +162,7 @@ pub(crate) fn read_str<'a>(buffer: &'a [u8], offset: &mut usize) -> Result<&'a s
 }
 
 #[derive(Default, Debug)]
-pub struct Map<'a>(Vec<(&'a str, &'a str)>);
+pub struct Map<'a>(pub Vec<(&'a str, &'a str)>);
 
 impl<'a> Map<'a> {
     pub fn get(&self, key: &'a str) -> Option<&'a str> {

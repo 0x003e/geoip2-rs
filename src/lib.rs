@@ -5,6 +5,7 @@ pub mod models;
 mod reader;
 
 pub use errors::Error;
+pub use decoder::{Map};
 pub use reader::{
     AnonymousIP, City, ConnectionType, Country, Domain, Enterprise, Reader, ASN, ISP,
 };
